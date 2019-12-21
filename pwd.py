@@ -6,7 +6,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 
 
-def get_password(min_digits, max_digits, words): # 用於生成密碼文件
+def get_password(min_digits, max_digits, words): # 用於生成密碼
     while min_digits <= max_digits:
         pwds = its.product(words, repeat=min_digits)
         for pwd in pwds:
